@@ -1,22 +1,28 @@
 package com.spring.java8.collections;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 public class Test {
 
     public static void main(String[] args) {
-        Student[] students = new Student[10];
-        students[0] = new Student();
-        students[1]= new Student();
 
-        Object[] objects = new Object[10];
-        objects[0] = new Student();
-        objects[1]= new Book();
+        Collection<String> fruitCollection = new ArrayList<>();
+        fruitCollection.add("Banana");
+        fruitCollection.add("Mango");
+        fruitCollection.add("Apple");
+//        System.out.println(fruitCollection);
+//        System.out.println("====");
+//        fruitCollection.remove("Apple");
+//        System.out.println(fruitCollection);
+//        System.out.println(fruitCollection.contains("Banana"));
+        fruitCollection.forEach((e)-> System.out.println(e));
+        fruitCollection.clear();
+        System.out.println(fruitCollection);
 
     }
 
-}
-class Student{
 
-}
-class Book{
+
 
 }
