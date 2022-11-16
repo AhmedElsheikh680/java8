@@ -1,27 +1,37 @@
 package com.spring.java8.list;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class ListDemo {
 
     public static void main(String[] args) {
-        List<String> programmingLangs= new ArrayList<>();
+//        List<String> programmingLangs= new ArrayList<>();
+        List<String> programmingLangs= new ArrayList<>(Arrays.asList("JAVA", "PHP", "LARAVEL", "PYTHON"));
+        programmingLangs.add("JS");
         System.out.println("Are Programming Langs Is Empty?: "+ programmingLangs.isEmpty());
-        programmingLangs.add("Java");
-        programmingLangs.add("PHP");
-        programmingLangs.add("C#");
-        programmingLangs.add("C++");
-
-//        programmingLangs.remove(1);
-//        programmingLangs.remove("C++");
-        List<String> subProgrammingLangs= new ArrayList<>();
-        subProgrammingLangs.add("PHP");
-        subProgrammingLangs.add("C++");
-        programmingLangs.removeAll(subProgrammingLangs);
+        System.out.println("SIZE: "+programmingLangs.size());
+        System.out.println(programmingLangs.remove(1));
         programmingLangs.forEach((e)-> System.out.println(e));
         programmingLangs.clear();
         System.out.println(programmingLangs);
+
+//        programmingLangs.add("Java");
+//        programmingLangs.add("PHP");
+//        programmingLangs.add("C#");
+//        programmingLangs.add("C++");
+
+
+//        programmingLangs.remove(1);
+//        programmingLangs.remove("C++");
+//        List<String> subProgrammingLangs= new ArrayList<>();
+//        subProgrammingLangs.add("PHP");
+//        subProgrammingLangs.add("C++");
+//        programmingLangs.removeAll(subProgrammingLangs);
+//        programmingLangs.forEach((e)-> System.out.println(e));
+//        programmingLangs.clear();
+//        System.out.println(programmingLangs);
 
 //        System.out.println("SIZE: "+ programmingLangs.size());
 //
