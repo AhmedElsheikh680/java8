@@ -12,11 +12,22 @@ public class ListDemo {
         programmingLangs.add("PHP");
         programmingLangs.add("C#");
         programmingLangs.add("C++");
-        System.out.println("SIZE: "+ programmingLangs.size());
 
-        System.out.println("GET INDEX: "+ programmingLangs.get(1));
-        programmingLangs.set(3, "Spring Boot");
+//        programmingLangs.remove(1);
+//        programmingLangs.remove("C++");
+        List<String> subProgrammingLangs= new ArrayList<>();
+        subProgrammingLangs.add("PHP");
+        subProgrammingLangs.add("C++");
+        programmingLangs.removeAll(subProgrammingLangs);
         programmingLangs.forEach((e)-> System.out.println(e));
+        programmingLangs.clear();
+        System.out.println(programmingLangs);
+
+//        System.out.println("SIZE: "+ programmingLangs.size());
+//
+//        System.out.println("GET INDEX: "+ programmingLangs.get(1));
+//        programmingLangs.set(3, "Spring Boot");
+//        programmingLangs.forEach((e)-> System.out.println(e));
 
 //        List<Integer> primeNumbers= new ArrayList<>();
 //        primeNumbers.add(2);
