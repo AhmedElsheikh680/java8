@@ -7,11 +7,6 @@ public class ListDemo {
     public static void main(String[] args) {
 
 
-
-
-
-
-
 //        List<String> programmingLangs= new ArrayList<>();
 //        List<String> programmingLangs= new ArrayList<>(Arrays.asList("JAVA", "PHP", "LARAVEL", "PYTHON"));
 //
