@@ -1,21 +1,63 @@
 package com.spring.java8.list;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class ListDemo {
 
     public static void main(String[] args) {
+
+
+
+
+
+
+
 //        List<String> programmingLangs= new ArrayList<>();
-        List<String> programmingLangs= new ArrayList<>(Arrays.asList("JAVA", "PHP", "LARAVEL", "PYTHON"));
-        programmingLangs.add("JS");
-        System.out.println("Are Programming Langs Is Empty?: "+ programmingLangs.isEmpty());
-        System.out.println("SIZE: "+programmingLangs.size());
-        System.out.println(programmingLangs.remove(1));
-        programmingLangs.forEach((e)-> System.out.println(e));
-        programmingLangs.clear();
-        System.out.println(programmingLangs);
+//        List<String> programmingLangs= new ArrayList<>(Arrays.asList("JAVA", "PHP", "LARAVEL", "PYTHON"));
+//
+//        for (int i=0; i<programmingLangs.size(); i++){
+//            System.out.println(programmingLangs.get(i));
+//        }
+//        System.out.println("================");
+//        for (String programmingLang: programmingLangs){
+//            System.out.println(programmingLang);
+//        }
+//
+//        for (Iterator<String>iterator=programmingLangs.iterator(); iterator.hasNext();){
+//            System.out.println(iterator.next());
+//        }
+//        System.out.println("-------------------");
+//
+//        Iterator<String> iterator = programmingLangs.iterator();
+//        while (iterator.hasNext()){
+//            System.out.println(iterator.next());
+//        }
+//        System.out.println("<<<<<<<<<<<<<<<<<<<<");
+//        programmingLangs.stream().forEach(programmingLang-> System.out.println(programmingLang));
+//
+//        System.out.println("???????????????????????????");
+//        programmingLangs.forEach(e-> System.out.println(e));
+
+
+//        for (Iterator<String> iterator=programmingLangs.iterator(); iterator.hasNext();){
+//            System.out.println(iterator.next());
+//        }
+//        System.out.println("???????????????????????????");
+//        Iterator<String> iterator=programmingLangs.iterator();
+//        while (iterator.hasNext()){
+//            System.out.println(iterator.next());
+//        }
+
+
+
+
+//        programmingLangs.add("JS");
+//        System.out.println("Are Programming Langs Is Empty?: "+ programmingLangs.isEmpty());
+//        System.out.println("SIZE: "+programmingLangs.size());
+//        System.out.println(programmingLangs.remove(1));
+//        programmingLangs.forEach((e)-> System.out.println(e));
+//        programmingLangs.clear();
+//        System.out.println(programmingLangs);
 
 //        programmingLangs.add("Java");
 //        programmingLangs.add("PHP");
