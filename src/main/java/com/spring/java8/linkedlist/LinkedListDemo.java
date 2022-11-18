@@ -1,5 +1,6 @@
 package com.spring.java8.linkedlist;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -15,12 +16,29 @@ public class LinkedListDemo {
         programmingLangs.add("NodeJs");
         programmingLangs.add("Ruby");
         programmingLangs.add("CSS");
-        System.out.println(programmingLangs.removeFirst());
-        System.out.println(programmingLangs.removeLast());
-        System.out.println(programmingLangs.remove(4));
-        programmingLangs.remove("Ruby");
-        System.out.println("==================");
+//        boolean result = programmingLangs.contains("Java");
+//        System.out.println(result);
+//        int indes = programmingLangs.indexOf("Java");
+//        System.out.println("Index: "+ indes);
+//        int last = programmingLangs.lastIndexOf("Ruby");
+//        System.out.println("LAst: "+ last);
+//        for (Iterator<String>iterator=programmingLangs.iterator(); iterator.hasNext();){
+//            String next = iterator.next();
+//            System.out.println(next);
+//        }
+//        Iterator<String>iterator=programmingLangs.iterator();
+//        while (iterator.hasNext()){
+//            String next = iterator.next();
+//            System.out.println(next);
+//        }
         programmingLangs.stream().forEach(programmingLang-> System.out.println(programmingLang));
+
+//        programmingLangs.removeFirst();
+//        System.out.println(programmingLangs.removeLast());
+//        System.out.println(programmingLangs.remove(4));
+//        System.out.println(programmingLangs.remove("Ruby"));
+//        System.out.println("==================");
+//        programmingLangs.stream().forEach(programmingLang-> System.out.println(programmingLang));
 
 //        programmingLangs.stream().forEach(programmingLang-> System.out.println(programmingLang));
 //        System.out.println("FIrst Element: "+ programmingLangs.getFirst());
