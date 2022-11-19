@@ -23,8 +23,8 @@ public class CopyListToAnotherList {
 //        List<String> copyCourses = courses.stream().collect(Collectors.toList());
 //        System.out.println(copyCourses);
 
-        List<String> copyCourses =List.copyOf(courses);
-        copyCourses.stream().forEach(copyCourse-> System.out.println(copyCourse));
+//        List<String> copyCourses =List.copyOf(courses);
+//        copyCourses.stream().forEach(copyCourse-> System.out.println(copyCourse));
 
 
     }
