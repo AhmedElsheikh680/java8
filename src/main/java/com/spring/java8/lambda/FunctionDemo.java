@@ -1,6 +1,7 @@
 package com.spring.java8.lambda;
 
 import java.time.LocalDateTime;
+import java.util.*;
 import java.util.function.BiFunction;
 import java.util.function.Consumer;
 import java.util.function.Function;
@@ -23,11 +24,25 @@ public class FunctionDemo {
         System.out.println(message.toLowerCase());
     }
     public static void main(String[] args) {
+
+        List<String> courses = new ArrayList<>(Arrays.asList("Java", "Php", "Js", "Css"));
+//        Function<List<String>, Set<String>> setFunction = (course)->new HashSet<>(course);
+//        setFunction.apply(courses).forEach(System.out::println);
+
+        Function<List<String>, Set<String>> setFunction = HashSet::new;
+        setFunction.apply(courses).forEach(System.out::println);
+
+
+//        String[] arr = {"a", "e", "i", "o", "u", "a", "e", "i", "o", "u"};
+//        Arrays.sort(arr, (s1, s2)->s1.compareToIgnoreCase(s2));
+//        Arrays.sort(arr, String::compareToIgnoreCase);
+
+
 //        Function<String, String> function = (input)->input.toLowerCase();
 //        System.out.println(function.apply("AHMED")) ;
 
-        Function<String, String> function = String::toLowerCase;
-        System.out.println(function.apply("ELSHEIKH"));
+//        Function<String, String> function = String::toLowerCase;
+//        System.out.println(function.apply("ELSHEIKH"));
 
 //        FunctionDemo functionDemo = new FunctionDemo();
 ////        Printable printable = (msg) ->functionDemo.display(msg);
