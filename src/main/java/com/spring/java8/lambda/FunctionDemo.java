@@ -14,8 +14,28 @@ class FunctionDemoImpl {
 //    }
 
 }
+@FunctionalInterface
+interface Printable {
+    void print(String message);
+}
 public class FunctionDemo {
+    public void display(String message){
+        System.out.println(message.toLowerCase());
+    }
     public static void main(String[] args) {
+//        Function<String, String> function = (input)->input.toLowerCase();
+//        System.out.println(function.apply("AHMED")) ;
+
+        Function<String, String> function = String::toLowerCase;
+        System.out.println(function.apply("ELSHEIKH"));
+
+//        FunctionDemo functionDemo = new FunctionDemo();
+////        Printable printable = (msg) ->functionDemo.display(msg);
+////        printable.print("Ahmed Mohamed");
+//        Printable printable = functionDemo::display;
+//        printable.print("AHMED ELSHEIKh");
+
+
 //        Function<String, Integer> function = new FunctionDemoImpl();
 //        System.out.println(function.apply("Ahmed"));
 
@@ -51,13 +71,13 @@ public class FunctionDemo {
 //        BiFunction<Integer, Integer, Integer> biFunction = (a,b) ->FunctionDemo.add(a, b);
 //        System.out.println(biFunction.apply(10,20));
 
-        BiFunction<Integer, Integer, Integer> biFunction = FunctionDemo::add;
-        System.out.println(biFunction.apply(20, 20));
+//        BiFunction<Integer, Integer, Integer> biFunction = FunctionDemo::add;
+//        System.out.println(biFunction.apply(20, 20));
 
     }
 
-    public static int add(int a, int b){
-        return a+b;
-    }
+//    public static int add(int a, int b){
+//        return a+b;
+//    }
 
 }
