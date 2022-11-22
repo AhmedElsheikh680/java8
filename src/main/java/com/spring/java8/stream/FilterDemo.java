@@ -43,6 +43,7 @@ public class FilterDemo {
 //                .collect(Collectors.toList()).forEach(System.out::println);
 
         getProducts().stream().sorted(Comparator.comparingDouble(Product::getPrice).reversed())
+                .map(s->s.getName().toUpperCase())
                 .collect(Collectors.toList()).forEach(System.out::println);
     }
 
